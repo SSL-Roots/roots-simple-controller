@@ -1,0 +1,60 @@
+body {
+  background-color: #f8f8f8;
+  font-family: "helvetica neue", helvetica, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  width: 480px;
+}
+
+label {
+  display: block;
+}
+
+#port-picker,
+#status {
+  color: #000;
+}
+
+#port-picker {
+  max-width: 250px;
+  margin-right: 10px;
+}
+
+#velocity-control {
+  width: 300px;
+  float: left;
+}
+
+#velocity_x, #velocity_y, #omega {
+  width: 150px;
+  margin-left: auto;
+}
+
+#command-control {
+  width: 180px;
+  float: right;
+}
+
+input#halt {
+  width: 480px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+#frame-log {
+  width: 480px;
+  clear: both;
+}
+
+div#log {
+  width: 480px;
+  height: 120px;
+  overflow: auto;
+}
+
+#show-packet {
+  width:200px;
+  margin-left:auto;
+}

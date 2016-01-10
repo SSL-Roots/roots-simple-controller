@@ -1,0 +1,72 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+html	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^<html>$/;"	function	line:2
+head	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^<head>$/;"	function	line:3
+script	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^  <script src="servo.js"><\/script>$/;"	function	line:4
+link	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^  <link rel="stylesheet" href="styles.css">$/;"	function	line:5
+body	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^<body>$/;"	function	line:7
+div	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^  <div id="container">$/;"	function	line:8
+label	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^    <label>$/;"	function	line:9
+select	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^      <select id="port-picker"><\/select>$/;"	function	line:11
+label	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^    <label>$/;"	function	line:14
+span	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^      <span id="status">Loading<\/span>$/;"	function	line:16
+label	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^    <label>$/;"	function	line:19
+input	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^      <input id="position-input" type="range" min="0" max="9" value="0">$/;"	function	line:21
+div	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^    <div id="image"><\/div>$/;"	function	line:24
+div	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^  <div id="tv" class="off">$/;"	function	line:27
+video	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^    <video id="camera-output" width="640" height="480" autoplay><\/video>$/;"	function	line:28
+img	/home/roots/Desktop/chrome-app-samples-master/samples/servo/main.html	/^    <img src="technical-difficulties.png" width="640" height="480" alt="Please stand by">$/;"	function	line:29
+body	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^body {$/;"	function	line:1
+label	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^label {$/;"	function	line:8
+label	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^label {$/;"	function	line:16
+#port-picker	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^#port-picker,$/;"	function	line:20
+#status	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^#status {$/;"	function	line:21
+#port-picker	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^#port-picker {$/;"	function	line:25
+#position-input	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^#position-input {$/;"	function	line:30
+#position-input::-webkit-slider-thumb	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^#position-input::-webkit-slider-thumb {$/;"	function	line:39
+#image	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^#image {$/;"	function	line:47
+#container	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^#container {$/;"	function	line:60
+#tv	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^#tv {$/;"	function	line:67
+#tv video	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^#tv video,$/;"	function	line:76
+#tv img	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^#tv img {$/;"	function	line:77
+#tv.working video	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^#tv.working video,$/;"	function	line:81
+#tv.broken img	/home/roots/Desktop/chrome-app-samples-master/samples/servo/styles.css	/^#tv.broken img {$/;"	function	line:82
+Arduino servo control	/home/roots/Desktop/chrome-app-samples-master/samples/servo/README.md	/^# Arduino servo control$/;"	function	line:4
+APIs	/home/roots/Desktop/chrome-app-samples-master/samples/servo/README.md	/^## APIs$/;"	function	line:11
+Screenshot	/home/roots/Desktop/chrome-app-samples-master/samples/servo/README.md	/^## Screenshot$/;"	function	line:17
+connectionId	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^var connectionId = -1;$/;"	variable	line:1
+setPosition	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function setPosition(position) {$/;"	function	line:3
+setPosition	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function setPosition(position) {$/;"	function	line:3
+onReceive	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function onReceive(receiveInfo) {$/;"	function	line:10
+onReceive	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function onReceive(receiveInfo) {$/;"	function	line:10
+onError	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function onError(errorInfo) {$/;"	function	line:21
+onError	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function onError(errorInfo) {$/;"	function	line:21
+onOpen	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function onOpen(connectionInfo) {$/;"	function	line:28
+onOpen	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function onOpen(connectionInfo) {$/;"	function	line:28
+setStatus	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function setStatus(status) {$/;"	function	line:38
+setStatus	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function setStatus(status) {$/;"	function	line:38
+buildPortPicker	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function buildPortPicker(ports) {$/;"	function	line:42
+onchange	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^  portPicker.onchange = function() {$/;"	function	line:54
+portPicker.onchange	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^  });$/;"	function	line:52
+buildPortPicker	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function buildPortPicker(ports) {$/;"	function	line:42
+openSelectedPort	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function openSelectedPort() {$/;"	function	line:63
+openSelectedPort	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^function openSelectedPort() {$/;"	function	line:63
+onload	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^onload = function() {$/;"	function	line:69
+document.getElementById	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^      });$/;"	function	line:80
+onload	/home/roots/Desktop/chrome-app-samples-master/samples/servo/servo.js	/^}$/;"	function	line:67
+name	/home/roots/Desktop/chrome-app-samples-master/samples/servo/manifest.json	/^  "name": "Servo Serial Sample",$/;"	function	line:2
+version	/home/roots/Desktop/chrome-app-samples-master/samples/servo/manifest.json	/^  "version": "0.4",$/;"	function	line:3
+manifest_version	/home/roots/Desktop/chrome-app-samples-master/samples/servo/manifest.json	/^  "manifest_version": 2,$/;"	function	line:4
+minimum_chrome_version	/home/roots/Desktop/chrome-app-samples-master/samples/servo/manifest.json	/^  "minimum_chrome_version": "23",$/;"	function	line:5
+description	/home/roots/Desktop/chrome-app-samples-master/samples/servo/manifest.json	/^  "description": "Show off serial functionality.",$/;"	function	line:6
+app	/home/roots/Desktop/chrome-app-samples-master/samples/servo/manifest.json	/^  "app": {$/;"	function	line:8
+background	/home/roots/Desktop/chrome-app-samples-master/samples/servo/manifest.json	/^    "background": {$/;"	function	line:9
+scripts	/home/roots/Desktop/chrome-app-samples-master/samples/servo/manifest.json	/^      "scripts": [ "background.js" ]$/;"	function	line:10
+icons	/home/roots/Desktop/chrome-app-samples-master/samples/servo/manifest.json	/^  "icons": {$/;"	function	line:14
+16	/home/roots/Desktop/chrome-app-samples-master/samples/servo/manifest.json	/^    "16": "assets\/icon-16x16.jpeg",$/;"	function	line:15
+128	/home/roots/Desktop/chrome-app-samples-master/samples/servo/manifest.json	/^    "128": "assets\/icon-128x128.jpeg"$/;"	function	line:16
+permissions	/home/roots/Desktop/chrome-app-samples-master/samples/servo/manifest.json	/^  "permissions": [$/;"	function	line:19

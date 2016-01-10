@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="controller.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <div id="serial_ui">
+      <label>
+        Port:
+        <select id="port-picker"></select>
+        Baudrate:
+        <select id="baud-picker">
+          <option>9600</option>
+          <option>38400</option>
+          <option>57600</option>
+          <option>115200</option>
+        </select>
+        <input id="connect" type="button" value="connect">
+      </label>
+    </div>
+
+    <div id="ui">
+      <input type="checkbox" name="continuous_sending" value="true">Enable Sending
+
+      <div id="velocity-control">
+        <h3>Velocity</h3>
+        Vel_x<input id="velocity_x" type="range" min="-127" max="127" value="0"><br>
+        Vel_y<input id="velocity_y" type="range" min="-127" max="127" value="0"><br>
+        Omega<input id="omega" type="range" min="-127" max="127" value="0">
+      </div>
+
+      <div id="command-control">
+        <h3>Dribble</h3>
+        <input id="dribble_power" type="range" min="0" max="15" value="0">
+
+        <div id="kick">
+          <h3> Kick </h3>
+          <input id="kick_straight" type="button" value="Straight">
+          <input id="kick_chip"     type="button" value="Chip">
+
+          <div id="frame-kick_power">
+            <input id="kick_power" type="range" min="0" max="15" value="0">
+          </div>
+        </div>
+      </div>
+
+      <input id="halt" type="button" value="HALT!">
+    </div>
+
+
+    <div id="frame-log">
+      <h2>Log</h2>
+      <label id="show-packet"> <input type="checkbox" name="show_packet" value="false">Show Packet </label>
+      <div id="log"></div>
+    </div>
+  </div>
+
+</body>
+</html>
