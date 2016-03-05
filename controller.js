@@ -1,7 +1,7 @@
 const MAX_VELNORM_METER_PER_SEC = 4.0;
 const VELANGLE_DEG_PER_DIGIT = 2.0;
 const MAX_OMEGA_RAD_PER_SEC = 2*Math.PI;
-const SEND_CYCLE = 500; //[ms]
+const SEND_CYCLE = 16; //[ms]
 
 var connectionId = -1;
 
