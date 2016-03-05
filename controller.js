@@ -21,6 +21,7 @@ input_omega = 0;
 input_kick_type = 'STRAIGHT'
 input_kick_power = 0;
 input_dribble_power = 0;
+input_charge_enable = false;
 
 
 function sendUIValue()
@@ -34,6 +35,7 @@ function sendUIValue()
   robot_command.kick_type     = input_kick_type;
   robot_command.kick_power    = input_kick_power;
   robot_command.dribble_power = input_dribble_power;
+  robot_command.charge_enable = input_charge_enable;
 
   send(robot_command);
 
@@ -105,7 +107,13 @@ function serialize(robot_command) {
   if (binarized_command.kick_type == "CHIP") {
     uint8View[6] |= 0x08;
   }
-  // TODO : ChargerFlag, ErrFlag
+
+  if (binarized_command.charge_enable == true) {
+    uint8View[6] |= 0x02;
+  }
+
+  // TODO : ErrFlag
+
 
   // TODO : Overflow err expression
   uint8View[7] = 0x00;
@@ -275,6 +283,10 @@ onload = function() {
       print("Stop sending")
     }
   };
+
+  document.getElementsByName('charge_enable')[0].onchange = function() {
+    input_charge_enable = this.checked
+  }
 
 
   document.getElementById('velocity_x').onchange = function() {
