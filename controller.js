@@ -274,6 +274,10 @@ onload = function() {
     openSelectedPort();
   };
 
+  document.getElementById('id-picker').onchange = function() {
+    input_id  = this.options[this.selectedIndex].value
+  }
+
   document.getElementsByName('continuous_sending')[0].onchange = function() {
     if(this.checked == true) {
       timer = setInterval(sendUIValue, SEND_CYCLE)
