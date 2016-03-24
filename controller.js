@@ -22,6 +22,7 @@ input_kick_type = 'STRAIGHT'
 input_kick_power = 0;
 input_dribble_power = 0;
 input_charge_enable = false;
+input_hold_kicker   = false;
 
 
 function sendUIValue()
@@ -40,7 +41,11 @@ function sendUIValue()
   send(robot_command);
 
   // Disable kicker
-  input_kick_power = 0;
+  if (!input_hold_kicker && input_kick_type != 'None') {
+    document.getElementById('kick_power').value     = 0;
+    input_kick_power = 0;
+    input_kick_type = 'None';
+  }
 };
 
 
@@ -290,6 +295,9 @@ onload = function() {
 
   document.getElementsByName('charge_enable')[0].onchange = function() {
     input_charge_enable = this.checked
+  }
+  document.getElementsByName('hold_kicker')[0].onchange = function() {
+    input_hold_kicker = this.checked
   }
 
 
