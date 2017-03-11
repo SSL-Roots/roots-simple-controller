@@ -14,7 +14,7 @@ function enableUI() {
 };
 
 
-input_id = 1;
+input_id = 0;
 input_vel_norm = 0;
 input_vel_theta = 0;
 input_omega = 0;
