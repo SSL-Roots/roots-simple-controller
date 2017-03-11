@@ -85,6 +85,20 @@ function send(robot_command) {
 };
 
 
+/* Roots Protocol
+ * 0: 1111 1111 |HEADER_1 0xFF
+ * 1: 1100 0011 |HEADER_2 0xC3
+ * 2: 0000 xxxx |x:ID
+ * 3: aaaa aaaa |a:vel_norm(0~254)
+ * 4: bbbb bbbb |b:vel_theta(0~180)
+ * 5: cccc cccc |c:omega(0~254)
+ * 6: d01e f110 |d:dribble_flag, e:kick_flag, f:chip_enable
+ * 7: gggg hhhh |g:dribble_power, h:kick_power
+ * 8: **** **** |XOR([2] ~ [7])
+ * 9: **** **** |XOR([8],0xFF)
+ *
+ */
+
 function serialize(robot_command) {
   var num_packet = 10;
   var buffer = new ArrayBuffer(num_packet);
@@ -93,8 +107,8 @@ function serialize(robot_command) {
   var binarized_command = new Object();
   binarized_command = scalingToBinary(robot_command);
 
-  uint8View[0] = 0x7F;
-  uint8View[1] = 0x80;
+  uint8View[0] = 0xFF;
+  uint8View[1] = 0xC3;
 
   uint8View[2] = binarized_command.id;
 
@@ -106,13 +120,14 @@ function serialize(robot_command) {
   if (binarized_command.dribble_power > 0) {
     uint8View[6] |= 0x80;
   }
+  uint8View[6] = 0x20;
   if (binarized_command.kick_power > 0) {
     uint8View[6] |= 0x10;
   }
   if (binarized_command.kick_type == "CHIP") {
     uint8View[6] |= 0x08;
   }
-
+  uint8View[6] = 0x04;
   if (binarized_command.charge_enable == true) {
     uint8View[6] |= 0x02;
   }
@@ -144,8 +159,8 @@ function scalingToBinary(robot_command) {
 
   // Velocity Norm
   command_binary.vel_norm = robot_command.vel_norm * 255 / 4;
-  if (command_binary.vel_norm > 255) {
-    command_binary.vel_norm = 255;
+  if (command_binary.vel_norm > 254) {
+    command_binary.vel_norm = 254;
   } else if (command_binary.vel_norm < 0) {
     command_binary.vel_norm = 0;
   }
