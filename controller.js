@@ -127,7 +127,7 @@ function serialize(robot_command) {
   if (binarized_command.kick_type == "CHIP") {
     uint8View[6] |= 0x08;
   }
-  uint8View[6] = 0x04;
+  uint8View[6] |= 0x04;
   if (binarized_command.charge_enable == true) {
     uint8View[6] |= 0x02;
   }
